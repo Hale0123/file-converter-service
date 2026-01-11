@@ -25,6 +25,7 @@ This is a real CAD kernel pipeline (Hidden Line Removal), not a mock or viewer.
 
 ## Setup & Run
 
+```bash
 # 1. Clone the repository
 git clone https://github.com/Hale0123/file-converter-service.git
 cd file-converter-service
