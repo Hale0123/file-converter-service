@@ -1,5 +1,14 @@
+# venv
 .venv/
+
+# python
 __pycache__/
 *.pyc
+
+# outputs
 output/
+*.svg
+*.pdf
+
+# env
 .env
