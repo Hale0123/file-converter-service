@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Always run from repo root, even if called elsewhere
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$ROOT"
+
+# Ensure venv exists
+if [[ ! -f ".venv/bin/python" ]]; then
+  echo "❌ .venv not found. Create it first: python3.11 -m venv .venv"
+  exit 1
+fi
+
+exec .venv/bin/python scripts/convert.py "$@"
