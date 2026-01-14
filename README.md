@@ -55,3 +55,10 @@ head -n 2 tests/fixtures/your_file.step
 
 # 8. Convert all STEP files in tests/fixtures
 ./convert --all
+
+#9 Run back-end
+pip install python-multipart
+pip install uvicorn fastapi
+python -m uvicorn apps.api.main:app --host 0.0.0.0 --port 8000 --reload
+
+
